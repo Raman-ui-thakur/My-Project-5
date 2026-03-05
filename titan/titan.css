@@ -1,0 +1,95 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.menu li {
+  position: relative;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.menu li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #060606;
+  transition: 0.3s ease;
+}
+
+.menu li:hover::after {
+  width: 100%;
+}
+
+.a-tag {
+  text-decoration: none;
+  color: #060606;
+}
+
+.text-font {
+  font-size: smaller;
+  color: gray;
+  padding-left: 9rem !important;
+}
+
+.img-hover:hover {
+  overflow: hidden;
+  transition: 0.4s ease;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.text-small-li {
+  font-size: 12px;
+}
+
+.li-heading {
+  font-size: 15px;
+}
+
+.hover-li ul li:hover {
+  color: #935d5d;
+  transition: 0.3s ease;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#left-pannel {
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+}
+
+@media (max-width: 767px) {
+  #left-pannel {
+    display: none !important;
+  }
+}
+
+@media (max-width: 999px) {
+  #left-pannel {
+    display: none !important;
+  }
+}
+
+.clickhere {
+  text-decoration: underline;
+  color: rgb(75, 75, 255);
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+.no-hover:hover {
+  text-decoration: none !important;
+}
+
+.head-sec ul li:hover {
+  text-decoration: underline;
+}
